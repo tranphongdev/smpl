@@ -7,6 +7,7 @@ import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import IconButton from '@mui/material/IconButton';
 import { InputAdornment } from '@mui/material';
+import { webRoutes } from '~/routes/web';
 
 const Login = () => {
   const [isPasswordShown, setIsPasswordShown] = React.useState(false);
@@ -41,7 +42,7 @@ const Login = () => {
           }}
         />
         <div className="text-right text-primary-600 cursor-pointer">
-          Quên Mật Khẩu ?
+          <Link to={webRoutes.forgotPassword}>Quên Mật Khẩu ?</Link>
         </div>
       </form>
       <Button variant="contained" startIcon={<LoginIcon />} className="w-40">

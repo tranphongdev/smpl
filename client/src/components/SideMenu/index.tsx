@@ -5,6 +5,7 @@ import DashboardIcon from '~/assets/svgs/dashboard.svg?react';
 import UserGroupIcon from '~/assets/svgs/user-group.svg?react';
 import PermContactIcon from '~/assets/svgs/perm-contact.svg?react';
 import { SidebarLinkGroup } from './SidebarLinkGroup';
+import Logo from '~/assets/images/main-logo.png';
 
 interface SideMenuProps {
   sidebarOpen: boolean;
@@ -71,7 +72,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
       {/* <!-- SIDEBAR HEADER --> */}
       <div className="flex items-center justify-center gap-5 py-8">
         <NavLink to="/" className="flex items-center gap-2">
-          Lenz
+          <img src={Logo} alt="logo" width={205}/>
         </NavLink>
 
         <button

@@ -13,7 +13,6 @@ interface MenuActionProps {
 }
 
 export const MenuAction: React.FC<MenuActionProps> = ({ index = 0, data }) => {
-  console.log('🚀 ~ index:', index);
   const [anchorEls, setAnchorEls] = useState<Array<null | HTMLElement>>(
     Array(data?.length).fill(null)
   );
@@ -100,7 +99,7 @@ export const MenuAction: React.FC<MenuActionProps> = ({ index = 0, data }) => {
               padding: '0 8px',
               borderRadius: '14px',
               mt: 0.5,
-              paddingX: '5px',
+              paddingX: 0,
               boxShadow:
                 '0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15)',
             },

@@ -1,7 +1,7 @@
 export const webRoutes = {
   home: '/',
   login: '/login',
-  register: '/register',
+  forgotPassword: '/forgot-password',
   logout: '/logout',
   dashboard: '/dashboard',
   listAccount: '/list-account',

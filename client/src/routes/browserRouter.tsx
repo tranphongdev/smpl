@@ -3,7 +3,7 @@ import { webRoutes } from '~/routes/web';
 import loadable from '@loadable/component';
 import { ProgressBar, Redirect, RequireAuth } from '~/components';
 import { AuthLayout, DefaultLayout } from '~/layouts';
-import { ErrorPage, Login, NotFoundPage, Register } from '~/pages';
+import { ErrorPage, Login, NotFoundPage, ForgotPassword } from '~/pages';
 
 const errorElement = <ErrorPage />;
 const fallbackElement = <ProgressBar />;
@@ -36,8 +36,8 @@ export const browserRouter = createBrowserRouter([
         element: <Login />,
       },
       {
-        path: webRoutes.register,
-        element: <Register />,
+        path: webRoutes.forgotPassword,
+        element: <ForgotPassword />,
       },
     ],
   },

@@ -77,6 +77,12 @@ const ListAccount = () => {
     },
   ].filter(Boolean) as ColumnsType[];
 
+  const status = {
+    [Status.ACTIVE]: 'text-primary-600',
+    [Status.INACTIVE]: 'text-gray-500',
+    [Status.DISABLED]: 'Disabled',
+  };
+
   return (
     <div>
       <DataTable<IUser> data={data} columns={columns} />

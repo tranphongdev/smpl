@@ -1,10 +1,10 @@
 import * as React from 'react';
 import MenuItem from '@mui/material/MenuItem';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
-import Logo from '~/assets/images/lenz.png';
 import { Outlet } from 'react-router-dom';
 import AuthThumb from '~/assets/images/auth.png';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Logo from '~/assets/images/main-logo.png';
 
 export const AuthLayout = () => {
   const [age, setAge] = React.useState('');
@@ -35,9 +35,9 @@ export const AuthLayout = () => {
           </Select>
         </div>
         <div className="flex flex-col items-center gap-6 mt-5 mb-20">
-          <img src={Logo} alt="logo" />
+          <img src={Logo} alt="logo" width={205}/>
           <h1 className="text-4xl font-bold text-primary-600">
-            Hệ Thống Quản Lý Chiếu Sáng Thông Minh
+           Quản Lý Sàn Thương Mại Điện Tử
           </h1>
         </div>
         <div className="flex flex-col items-center">

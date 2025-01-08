@@ -22,7 +22,7 @@ export const DataTableHead: React.FC<DataTableHeadProps> = ({ columns }) => {
               maxWidth: column.width,
             }}
           >
-            {column.title}
+            <p className="truncate">{column.title}</p>
           </TableCell>
         ))}
       </TableRow>

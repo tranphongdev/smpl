@@ -148,6 +148,13 @@ const theme = createTheme({
           boxShadow: '0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15)'
         }
       }
+    },
+    MuiSvgIcon:{
+      styleOverrides:{
+        root:{
+          color: "#262626"
+        }
+      }
     }
   },
 });
