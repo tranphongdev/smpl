@@ -4,6 +4,7 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 import Logo from '~/assets/images/lenz.png';
 import { Outlet } from 'react-router-dom';
 import AuthThumb from '~/assets/images/auth.png';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export const AuthLayout = () => {
   const [age, setAge] = React.useState('');
@@ -20,22 +21,24 @@ export const AuthLayout = () => {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="w-3/5 px-6 mt-16">
+      <div className="w-3/5 px-6 mt-6">
         <div className="flex justify-end">
           <Select
+            className="w-40"
             value={age}
             onChange={handleChange}
+            IconComponent={ExpandMoreIcon}
             displayEmpty
-            inputProps={{ 'aria-label': 'Without label' }}
           >
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
+            <MenuItem value="">Tiếng Việt</MenuItem>
+            <MenuItem value={20}>English</MenuItem>
           </Select>
         </div>
         <div className="flex flex-col items-center gap-6 mt-5 mb-20">
           <img src={Logo} alt="logo" />
-          <h1>Hệ Thống Quản Lý Chiếu Sáng Thông Minh</h1>
+          <h1 className="text-4xl font-bold text-primary-600">
+            Hệ Thống Quản Lý Chiếu Sáng Thông Minh
+          </h1>
         </div>
         <div className="flex flex-col items-center">
           <Outlet />

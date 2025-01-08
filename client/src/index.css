@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -141,3 +141,14 @@
   width: fit-content !important;
 }
 /* End of customizing toast styles */
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+.MuiInputBase-input-MuiOutlinedInput-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 100px #ffffff inset;
+  -webkit-text-fill-color: #fff;
+  caret-color: #262626;
+}
